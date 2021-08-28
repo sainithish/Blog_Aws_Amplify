@@ -1,0 +1,7 @@
+{/* to replce content  app.js {courseGoals.length > 0 && (
+              <CourseGoalList
+                items={courseGoals}
+                onDeleteItem={deleteItemHandler}
+              />
+            ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
+            } */}
