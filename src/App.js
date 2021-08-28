@@ -5,6 +5,7 @@ import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 import ListBlogComponent from './components/ListBlogComponent';
 import { BrowserRouter as Router , Route, Switch } from 'react-router-dom';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
@@ -63,8 +64,9 @@ const App = () => {
           </section>
        
       </Router> 
+      <AmplifySignOut />
     </div>
   );
 };
 
-export default App;
+export default withAuthenticator(App);
